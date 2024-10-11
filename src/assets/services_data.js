@@ -3,7 +3,7 @@ const Services_Data = [
         // s_no: 1,
         s_name: "Web Design",
         s_desc: "Web development is the process of building and programming websites to create a user-friendly experience.",
-        link: "https://topmate.io/greatstack/911644"
+        link: "/web-design"
     },
     {
         // s_no: 2,
