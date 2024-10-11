@@ -1,0 +1,21 @@
+html, body {
+    height: 100%; /* Ensure the body takes the full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    font-size: 16px; /* Specify a font size */
+    padding: 20px; /* Optional: Add padding for spacing */
+    color: white; /* Optional: Set text color for better contrast */
+    position: relative; /* Positioning context */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Make it full width */
+}
+
+.footer-bottom-right {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}

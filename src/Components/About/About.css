@@ -1,0 +1,198 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 70px 10%;
+}
+
+.about-sections {
+    display: flex;
+    gap: 60px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.about-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-left img {
+    width: 300px; /* Adjust image size */
+    border-radius: 10px;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center text horizontally */
+    text-align: center; /* Ensure the text is centered */
+}
+
+.about-para {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about-skills {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Spacing between the icons */
+    justify-items: center; /* Center icons horizontally */
+    align-items: center; /* Center icons vertically */
+}
+
+.about-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+    cursor: pointer; /* Pointer on hover */
+}
+
+.about-skill p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 8px; /* Spacing between the icon and text */
+}
+
+.about-skill:hover {
+    transform: scale(1.1);
+    background: linear-gradient(270deg, #DF8908 0%, #B415FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+}
+
+.about-achievements {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.about-achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.5s;
+}
+
+.about-achievement h1 {
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #DF8908 50.41%, #B415FF 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-achievement p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.about-achievement a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-achievement:hover {
+    transform: scale(1.12);
+    transition: 0.5s;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+}
+
+.social-media a {
+    padding: 25px;
+    transition: transform 0.3s;
+}
+
+.social-media a:hover {
+    transform: scale(1.1);
+}
+
+.social-media .fa-icon {
+    font-size: 40px;
+    color: #B415FF;
+    transition: color 0.3s;
+}
+
+.social-media a:hover .fa-icon {
+    color: #DF8908;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .about {
+        gap: 30px; /* Reduced gap for small screens */
+        margin: 50px 5%; /* Reduced margin for small screens */
+    }
+    
+    .about-sections {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center sections */
+    }
+    
+    .about-left {
+        justify-content: center; /* Center content in the left section */
+    }
+    
+    .about-left img {
+        width: 200px; /* Smaller image on mobile */
+    }
+    
+    .about-para {
+        line-height: 1.5; /* Improved line height */
+        text-align: center; /* Center text for smaller screens */
+        padding: 0 10px; /* Add padding for better spacing */
+    }
+    
+    .about-skills {
+        grid-template-columns: repeat(4, 1fr); /* Adjust to 4 columns for smaller screens */
+        grid-template-rows: repeat(2, 1fr); /* Ensure consistent row structure */
+    }
+    
+    .about-skill p {
+        font-size: 16px; /* Slightly larger text for clarity */
+        min-width: 80px; /* Ensure a minimum width for icons */
+    }
+    
+    .about-achievements {
+        flex-direction: column; /* Stack achievements vertically */
+        align-items: center; /* Center achievements */
+        justify-content: center; /* Center content */
+    }
+    
+    .about-achievement {
+        gap: 5px; /* Reduced gap for mobile */
+    }
+    
+    .about-achievement h1 {
+        font-size: 28px; /* Reduced font size */
+    }
+    
+    .about-achievement p {
+        text-align: center; /* Center text */
+        font-size: 14px; /* Slightly smaller font */
+    }
+}

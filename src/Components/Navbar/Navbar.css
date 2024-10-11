@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Outfit:wght@100..900&display=swap');
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 10%;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    font-size: 22px;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+.nav-connect {
+    padding: 15px 20px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+
+.navbar .logo-text {
+    font-family: 'Pacifico', cursive; 
+    font-size: 45px; 
+    background: linear-gradient(90deg, #FF9933 0%, #FFFFFF 50%, #138808 100%); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center; 
+    margin-left: 10px; 
+    transition: transform 0.3s ease;
+}
+
+.navbar .logo-text:hover {
+    transform: scale(1.1); 
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    position: relative; /* To position the hover effect */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for scale and background */
+}
+
+.nav-menu li:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+    background: linear-gradient(270deg, #DF8908 0%, #B415FF 100%); /* Hover gradient */
+    border-radius: 10px; /* Rounded corners for the hover effect */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Make the text transparent with the gradient */
+}
+
+.nav-menu li img {
+    display: flex;
+    margin: auto;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white; /* Default text color */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.nav-menu li:hover .anchor-link {
+    color: #DF8908; /* Change text color on hover */
+}
+
+.nav-mob-close {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-mob-open {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+}
+
+@media(max-width:768px) {
+    .navbar {
+        margin: 20px 6%;
+    }
+
+    .nav-connect {
+        display: none;
+    }
+
+    .nav-mob-open {
+        display: block;
+        position: absolute;
+        right: 30px;
+    }
+
+    .nav-mob-close {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 7%;
+        width: 30px;
+    }
+
+    .navbar ul {
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background-color: #1F0016;
+        width: 300px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -300px;
+        padding-top: 100px;
+    }
+
+    .nav-menu li {
+        font-size: 22px;
+        padding-left: 50px;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
