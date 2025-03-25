@@ -1,6 +1,6 @@
 import project1_img from '../assets/Project_JP.png';
 import project2_img from '../assets/Project_MP.png';
-import project3_img from '../assets/Project_QR.png';
+import project3_img from '../assets/Project_Qr.png';
 import project4_img from '../assets/project_4.svg';
 import project5_img from '../assets/project_5.svg';
 import project6_img from '../assets/project_6.svg';
