@@ -5,13 +5,12 @@ import mywork_data from '../../assets/mywork_data';
 import arrow_icon from '../../assets/arrow_icon.svg';
 
 const MyWork = () => {
-    const [showMore, setShowMore] = useState(false); // State to toggle between more/less projects
+    const [showMore, setShowMore] = useState(false);
 
     const handleToggle = () => {
-        setShowMore(!showMore); // Toggle state
+        setShowMore(!showMore);
     };
 
-    // Determine how many projects to show
     const projectsToShow = showMore ? mywork_data : mywork_data.slice(0, 4);
 
     return (
@@ -24,8 +23,10 @@ const MyWork = () => {
                 {projectsToShow.map((work, index) => (
                     <a key={index} href={work.link} target="_blank" rel="noopener noreferrer" className="work-item">
                         <div className="image-container">
-                            <img src={work.w_img} alt={work.w_name || "Project Image"} />
-                            <p className="hover-text">{work.w_name}</p> {/* Displaying the w_name in gradient */}
+                            <div className="white-box">
+                                <img src={work.w_img} alt={work.w_name || "Project Image"} />
+                            </div>
+                            <p className="hover-text">{work.w_name}</p>
                         </div>
                     </a>
                 ))}
