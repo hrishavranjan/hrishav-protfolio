@@ -2,7 +2,7 @@ import project1_img from '../assets/Project_JP.png';
 import project2_img from '../assets/Project_MP.png';
 import project3_img from '../assets/Project_PC.jpg';
 import project4_img from '../assets/project_4.jpg';
-import project5_img from '../assets/project_Qr.png';
+import project5_img from '../assets/Project_Qr.png';
 import project6_img from '../assets/project_6.svg';
 
 const mywork_data = [
@@ -22,7 +22,7 @@ const mywork_data = [
         w_no: 3,
         w_name: "Pancreatic Cancer Info Web App",
         w_img: project3_img,
-        link: "https://hrishavranjan.github.io/QR-Code-Generator/" 
+        link: "https://pancreatic-cancer-predictor.streamlit.app/" 
     },
     {
         w_no: 4,
@@ -34,7 +34,7 @@ const mywork_data = [
         w_no: 5,
         w_name: "Qr Code Generator",
         w_img: project5_img,
-        link: "" 
+        link: "https://hrishavranjan.github.io/QR-Code-Generator/" 
     },
     {
         w_no: 6,
