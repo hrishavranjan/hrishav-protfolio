@@ -17,37 +17,39 @@
     width: 100%;
     transition: 0.3s;
     cursor: pointer;
+    border: 4px solid rgb(215, 214, 212); 
+    border-radius: 10px;
 }
 
 .mywork-container img:hover {
     transform: scale(1.10);
-    opacity: 0.7; /* Add transparency on hover */
-    border: 4px solid #ff00ff;
+    opacity: 0.4; 
+    border: 4px solid #ff00ff; 
     border-radius: 10px;
     transition: 0.3s;
 }
 
 .image-container {
-    position: relative; /* Position relative for absolute positioning of hover text */
+    position: relative; 
 }
 
 .hover-text {
-    position: absolute; /* Position text on top of the image */
-    bottom: 10px; /* Adjust positioning as needed */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust centering */
-    color: transparent; /* Hide text by default */
-    font-size: 18px; /* Adjust font size */
-    font-weight: bold; /* Make text bold */
-    background: linear-gradient(270deg, #DF8908 50%, #B415FF 100%); /* Gradient colors */
-    background-clip: text; /* Clip background to text */
-    -webkit-background-clip: text; /* Safari */
-    opacity: 0; /* Initially hide the text */
-    transition: opacity 0.3s; /* Smooth transition */
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(270deg, #DF8908 50%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 .image-container:hover .hover-text {
-    opacity: 1; /* Show text on hover */
+    opacity: 1;
 }
 
 .mywork-showmore {
@@ -69,8 +71,8 @@
 }
 
 .mywork-showmore:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Darken on hover */
-    transform: scale(1.05); /* Slightly enlarge */
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {

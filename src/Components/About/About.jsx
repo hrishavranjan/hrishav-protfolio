@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 import theme_pattern from '../../assets/theme_pattern.svg';
-import profile_img from '../../assets/profile.jpg';
+import profile_img from '../../assets/profile1.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { FaHtml5, FaCss3Alt, FaReact, FaJs, FaNodeJs, FaJava, FaGitAlt } from 'react-icons/fa';
@@ -20,7 +20,7 @@ const About = () => {
         </div>
         <div className="about-right">
           <div className="about-para">
-            <p>I am a third-year B.Tech Computer Science student at KIIT, passionately immersed in the world of coding.</p>
+            <p>I am a final-year B.Tech Computer Science student at KIIT, passionately immersed in the world of coding.</p>
             <p>My love for programming drives me to explore new technologies and solve complex problems. With each line of code, I find a unique joy and fulfillment, constantly honing my skills and embracing the challenges of this ever-evolving field.</p>
           </div>
           <div className="about-skills">
@@ -43,7 +43,7 @@ const About = () => {
       </div>
       <div className="about-achievements">
         <div className="about-achievement">
-          <h1>0+</h1>
+          <h1>4+</h1>
           <p>YEARS OF EXPERIENCE</p>
         </div>
         <hr />

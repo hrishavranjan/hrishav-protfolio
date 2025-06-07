@@ -111,3 +111,15 @@
         font-size: 14px;
     }
 }
+
+
+.cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
