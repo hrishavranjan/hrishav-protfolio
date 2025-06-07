@@ -20,7 +20,7 @@ const mywork_data = [
     },
     {
         w_no: 3,
-        w_name: "Pancreatic Cancer Info Web App",
+        w_name: "Pancreatic Cancer Prediction App",
         w_img: project3_img,
         link: "https://pancreatic-cancer-predictor.streamlit.app/" 
     },
